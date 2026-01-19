@@ -2,180 +2,177 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: Gilroy;
 }
 html,body{
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 #main{
-    height: 100%;
     width: 100%;
-    background-color: white ;
-    display: grid;
-    grid-template-columns:  25% 20% 50%;
-    grid-template-rows: 30% 55% 15%;
+    height: 100%;
+    background-color: #fff;
 }
-#left-top-left{
-    background:r;
-    padding: 25px;
+#nav{
+    height:100px;
+    width: 100%;
+    background-color:ed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 50px;
+    gap: 50px;
 }
-#square{
-    height: 30px;
-    width: 30px;
-    background: black;
-    rotate: 45deg;
-}
-#left-top-right{
-    background-color: ble;
-    justify-self: right;
-    padding: 30px;
-    text-align: right ;
-}
-#left-top-right h4{
-    margin-bottom: 40px;
-    font-size: 30px;
+#nav h4{
+    font-size: 30px ;
     font-weight: 500;
+}
+#nav i{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+#center{
+    width: 100%;
+    background-color: d;
+    padding: 40px 50px;
 
 }
-#left-top-right h5{
-     font-size: 20px;
-     font-weight: 500;
+#center h1{
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 4.5vw;
 }
-#left-top-right h6{
-    display: none;
+#center-in{
+    height: 200px;
+    width: 100%;
+    background-color:;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
-#left-center{
-    background-color:yew;
-    grid-column: 1/3;
-    padding: 20px;
-}
-#left-center{
-    background-color: aq;
-    font-size: 2.5vw;
-    line-height: 5vw   ;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
-    color:;
-}
-#left-center h1:nth-child(2n){
-    text-align: center;
-}
-#left-bottom{
-    background-color: gree;
-    grid-column: 1/3;
-    padding:  0 20px;
-    
-}
-#left-bottom p{
-    width:70%;
-    color: black;
+#center-in p{
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 1.2vw;
 }
 #right{
-   background-color:greenyeow;
-    grid-column: 3;
-    grid-row: 1/4;
-    padding:  10px   40px;
-    padding-right: 80px;
-    
+    width: 20% ;
 }
-#right video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#arrow{
-      position: absolute;
-    top: 50%;
-    left: 45%;
-    padding: 20px;
-    background-color: red;
-    border-radius: 45px;
-    color: #fff;
+.elem {
+    background-color: low;
+    margin: 10px;
+    padding: 18px 0 ;
+    border-top: 2px solid black;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    transform: translate(-50% -50%);
+    justify-content: space-between;
+
 }
-#arrow i{
-    font-size: 30px;
+.elem i{
+    font-size: 1.5vw;
     font-weight: 500;
+    opacity: 0;
 }
-@media (max-width:600px){
-    #main{
-     
-     grid-template-columns:   50% 50%;
-     grid-template-rows: 60px 30% 10%;
-    }
-    #left-top-left{
-     background:d;
-     padding: 15px;
-    }
-    #square{
-      height: 20px;
-     width: 20px;
-     
-    }
-    #left-top-right{
-     padding: 10px;
-     text-align: right ;
-    }
-   #left-top-right h4{
-     display:  none;
-
-    }
-    #left-top-right h5{
-      display: none;
-    }
-    #left-top-right h6{
-    display: initial;
-}
-    #left-center{
-     background-color: white;
-     padding: 20px 30px ;
-    }
-   #left-center{
-    font-size: 5vw;
-    line-height: 8vw;
-   }
-    #left-center h1:nth-child(2n){
-     text-align: right;
-    }
-   #left-bottom{
-     background-color: w;
-     padding:  0 20px;
-    }
- #left-bottom p{
-    width:70%;
+.elem a{
     color: black;
-} 
-    #right{
-     
-     grid-column: 1/4;
-     grid-row: 4;
-     padding:  20px;
-     padding-right: 20px;
-    
-    }
-    #right video{
-     height: 45vh ;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
 }
-    #arrow{
-       position: absolute;
-    top: 47%;
-    left: 45%;
-    padding: 10px;
+.elem:hover i{
+    opacity: 1;
+}
+.elem:hover {
+    background-color: rgb(239, 237, 237);
+}
+#bottom{
+    height: 27%;
+    width: 100%;
     background-color: red;
-    border-radius: 45px;
-    color: #fff;
+    background-image: url(https://images.unsplash.com/photo-1556793521-8ee923a8eef4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxibGFjayUyMG1vZGVsfGVufDB8fDB8fHww) ;
+    background-size: cover;
+    background-position: 0 37%;
+}
+@media (max-width:600px) {
+    #nav{
+     height:9vw;
+     padding: 0px 10px;
+     gap: 3.5vw;
+    }
+    #nav h4{
+     font-size: 10px;
+     
+    }
+    #nav i{
+     font-size: 7px;
+     padding: 5px;
+        
+    }  
+    #center{
+    width: 100%;
+    background-color: d;
+    padding: 15px 15px;
+
+}
+#center h1{
+    font-size: 9vw;
+    font-weight: 500;
+    line-height: 10vw;
+}
+#center-in{
+    height: 250px;
+    width: 100%;
+    background-color:;
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#center-in p{
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 9px;
+}
+#right{
+    width: 100% ;
+    padding-bottom: 70px;
+}
+.elem {
+    background-color: low;
+    margin:1px ;
+    padding:10px 0 ;
+    border-top: 1.5px solid black;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    transform: translate(-50% -50%);
-    
-    }
-    #arrow i{
-     font-size: 20px;
-     font-weight: 500;
-    }
+    justify-content: space-between;
+
+}
+.elem i{
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0;
+}
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size:15px;
+}
+.elem:hover i{
+    opacity: 1;
+}
+.elem:hover {
+    background-color: rgb(239, 237, 237);
+}
+#bottom{
+    height: 20%;
+    width: 100%;
+    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1556793521-8ee923a8eef4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxibGFjayUyMG1vZGVsfGVufDB8fDB8fHww) ;
+    background-size: cover;
+    background-position: 0 37%;
+}
 }
